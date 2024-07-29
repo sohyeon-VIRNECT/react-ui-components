@@ -4,6 +4,10 @@ import { colorPalette } from './colors'
 export default css`
   ${colorPalette}
 
+  :root {
+    --dimmed-zIndex: 10;
+  }
+
   html,
   body,
   div,
