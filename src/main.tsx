@@ -4,7 +4,7 @@ import App from './App.tsx'
 import './index.css'
 
 import { Global } from '@emotion/react'
-import * as globalStyles from './styles/global.ts'
+import globalStyles from './styles/global.ts'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
