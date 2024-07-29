@@ -3,6 +3,7 @@ import Text from '@/components/Text'
 import Button from '@/components/Button'
 import Input from '@/components/Input'
 import TextField from '@/components/TextField'
+import Alert from '@/components/Alert'
 
 function App() {
   return (
@@ -62,6 +63,17 @@ function App() {
         hasError={true}
         helpMessage={'비밀번호는 8글자 이상 입력해주세요.'}
         type="password"
+      />
+
+      <br />
+      <br />
+
+      <Alert
+        title="알럿입니다"
+        description="설명입니다."
+        buttonLabel="good"
+        onButtonClick={() => {}}
+        open={true}
       />
     </div>
   )
