@@ -6,6 +6,7 @@ export default css`
 
   :root {
     --dimmed-zIndex: 10;
+    --alert-zIndex: 11;
   }
 
   html,
