@@ -1,6 +1,7 @@
 import './App.css'
 import Text from '@/components/Text'
 import Button from '@/components/Button'
+import Input from '@/components/Input'
 
 function App() {
   return (
@@ -44,6 +45,12 @@ function App() {
       <Button disabled>disabled</Button>
       <Button size="medium">medium</Button>
       <Button size="large">large</Button>
+
+      <br />
+      <br />
+
+      <Input placeholder="로그인" aria-invalid={false} />
+      <Input aria-invalid={true} />
     </div>
   )
 }
