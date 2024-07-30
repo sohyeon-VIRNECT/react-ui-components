@@ -6,7 +6,8 @@ import TextField from '@/components/TextField'
 import Alert from '@/components/Alert'
 import { useAlertContext } from '@/contexts/AlertContext'
 // import FixedBottomButton from '@/components/FixedBottomButton'
-import Spacing from './components/Spacing'
+import Spacing from '@/components/Spacing'
+import Skeleton from '@/components/Skeleton'
 
 function App() {
   const { open } = useAlertContext()
@@ -102,6 +103,9 @@ function App() {
         <Button>둘</Button>
         <Button>셋</Button>
       </Button.Group>
+
+      <Spacing size={40} />
+      <Skeleton width={200} height={120} />
     </div>
   )
 }
