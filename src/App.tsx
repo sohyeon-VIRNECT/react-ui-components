@@ -5,7 +5,7 @@ import Input from '@/components/Input'
 import TextField from '@/components/TextField'
 import Alert from '@/components/Alert'
 import { useAlertContext } from '@/contexts/AlertContext'
-import FixedBottomButton from '@/components/FixedBottomButton'
+// import FixedBottomButton from '@/components/FixedBottomButton'
 import Spacing from './components/Spacing'
 
 function App() {
@@ -93,7 +93,15 @@ function App() {
 
       <Spacing size={40} />
 
-      <FixedBottomButton label="신청하기" onClick={() => {}} />
+      {/* <FixedBottomButton label="신청하기" onClick={() => {}} /> */}
+
+      <Spacing size={40} />
+
+      <Button.Group title="버튼 그룹">
+        <Button>하나</Button>
+        <Button>둘</Button>
+        <Button>셋</Button>
+      </Button.Group>
     </div>
   )
 }
