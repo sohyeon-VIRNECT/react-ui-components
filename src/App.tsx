@@ -4,8 +4,11 @@ import Button from '@/components/Button'
 import Input from '@/components/Input'
 import TextField from '@/components/TextField'
 import Alert from '@/components/Alert'
+import { useAlertContext } from '@/contexts/AlertContext'
 
 function App() {
+  const { open } = useAlertContext()
+
   return (
     <div>
       <Text typography="t1" display="block" color="red">
@@ -73,8 +76,22 @@ function App() {
         description="설명입니다."
         buttonLabel="good"
         onButtonClick={() => {}}
-        open={true}
+        open={false}
       />
+
+      <Button
+        onClick={() => {
+          open({
+            title: '제목',
+            description: '내용입니다.',
+            onButtonClick: () => {
+              //
+            },
+          })
+        }}
+      >
+        Alert 열기
+      </Button>
     </div>
   )
 }
