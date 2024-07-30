@@ -6,6 +6,7 @@ import TextField from '@/components/TextField'
 import Alert from '@/components/Alert'
 import { useAlertContext } from '@/contexts/AlertContext'
 import FixedBottomButton from '@/components/FixedBottomButton'
+import Spacing from './components/Spacing'
 
 function App() {
   const { open } = useAlertContext()
@@ -32,8 +33,7 @@ function App() {
         t7
       </Text>
 
-      <br />
-      <br />
+      <Spacing size={40} />
 
       <Button>default</Button>
       <Button color="success" full>
@@ -52,14 +52,12 @@ function App() {
       <Button size="medium">medium</Button>
       <Button size="large">large</Button>
 
-      <br />
-      <br />
+      <Spacing size={40} />
 
       <Input placeholder="로그인" aria-invalid={false} />
       <Input aria-invalid={true} />
 
-      <br />
-      <br />
+      <Spacing size={40} />
 
       <TextField label="아이디" />
       <TextField
@@ -69,8 +67,7 @@ function App() {
         type="password"
       />
 
-      <br />
-      <br />
+      <Spacing size={40} />
 
       <Alert
         title="알럿입니다"
@@ -94,8 +91,7 @@ function App() {
         Alert 열기
       </Button>
 
-      <br />
-      <br />
+      <Spacing size={40} />
 
       <FixedBottomButton label="신청하기" onClick={() => {}} />
     </div>
