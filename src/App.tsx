@@ -5,6 +5,7 @@ import Input from '@/components/Input'
 import TextField from '@/components/TextField'
 import Alert from '@/components/Alert'
 import { useAlertContext } from '@/contexts/AlertContext'
+import FixedBottomButton from '@/components/FixedBottomButton'
 
 function App() {
   const { open } = useAlertContext()
@@ -92,6 +93,11 @@ function App() {
       >
         Alert 열기
       </Button>
+
+      <br />
+      <br />
+
+      <FixedBottomButton label="신청하기" onClick={() => {}} />
     </div>
   )
 }
