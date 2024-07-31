@@ -8,12 +8,15 @@ import { useAlertContext } from '@/contexts/AlertContext'
 import Spacing from '@/components/Spacing'
 import Skeleton from '@/components/Skeleton'
 import ProgressBar from '@/components/ProgressBar'
+import ScrollProgressBar from '@/components/ScrollProgressBar'
 
 function Test() {
   const { open } = useAlertContext()
 
   return (
     <>
+      <ScrollProgressBar marginTop={50} />
+
       <Text typography="t1" display="block" color="red">
         t1
       </Text>
