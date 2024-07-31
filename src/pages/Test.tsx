@@ -7,6 +7,7 @@ import { useAlertContext } from '@/contexts/AlertContext'
 // import FixedBottomButton from '@/components/FixedBottomButton'
 import Spacing from '@/components/Spacing'
 import Skeleton from '@/components/Skeleton'
+import ProgressBar from '@/components/ProgressBar'
 
 function Test() {
   const { open } = useAlertContext()
@@ -105,6 +106,9 @@ function Test() {
 
       <Spacing size={40} />
       <Skeleton width={200} height={120} />
+
+      <Spacing size={40} />
+      <ProgressBar progress={0.9} />
     </>
   )
 }
