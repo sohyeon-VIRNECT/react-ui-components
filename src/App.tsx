@@ -8,12 +8,15 @@ import { useAlertContext } from '@/contexts/AlertContext'
 // import FixedBottomButton from '@/components/FixedBottomButton'
 import Spacing from '@/components/Spacing'
 import Skeleton from '@/components/Skeleton'
+import { BrowserRouter } from 'react-router-dom'
+import Router from '@/routes/Router'
 
 function App() {
   const { open } = useAlertContext()
 
   return (
-    <div>
+    <BrowserRouter>
+      <Router />
       <Text typography="t1" display="block" color="red">
         t1
       </Text>
@@ -106,7 +109,7 @@ function App() {
 
       <Spacing size={40} />
       <Skeleton width={200} height={120} />
-    </div>
+    </BrowserRouter>
   )
 }
 
