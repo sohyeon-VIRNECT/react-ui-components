@@ -9,6 +9,7 @@ import Spacing from '@/components/Spacing'
 import Skeleton from '@/components/Skeleton'
 import ProgressBar from '@/components/ProgressBar'
 import ScrollProgressBar from '@/components/ScrollProgressBar'
+import Tag from '@/components/Tag'
 
 function Test() {
   const { open } = useAlertContext()
@@ -112,6 +113,12 @@ function Test() {
 
       <Spacing size={40} />
       <ProgressBar progress={0.9} />
+
+      <Spacing size={40} />
+      <Tag backgroundColor="green">초록</Tag>
+      <Tag backgroundColor="blue">파랑</Tag>
+      <Tag backgroundColor="red">빨강</Tag>
+      <Tag backgroundColor="grey">회색</Tag>
     </>
   )
 }
