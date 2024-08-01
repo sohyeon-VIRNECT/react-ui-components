@@ -10,6 +10,7 @@ import Skeleton from '@/components/Skeleton'
 import ProgressBar from '@/components/ProgressBar'
 import ScrollProgressBar from '@/components/ScrollProgressBar'
 import Tag from '@/components/Tag'
+import Accordion from '@/components/Accordion'
 
 function Test() {
   const { open } = useAlertContext()
@@ -119,6 +120,11 @@ function Test() {
       <Tag backgroundColor="blue">파랑</Tag>
       <Tag backgroundColor="red">빨강</Tag>
       <Tag backgroundColor="grey">회색</Tag>
+
+      <Spacing size={40} />
+      <Accordion label="아코디언">
+        <div>내용</div>
+      </Accordion>
     </>
   )
 }
